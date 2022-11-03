@@ -1,5 +1,5 @@
 
-run = "npm run start"
+run = "node Bot.js"
 
 [[hints]]
 regex = "Error \\[ERR_REQUIRE_ESM\\]"
