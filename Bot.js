@@ -9,6 +9,10 @@ const bot = mineflayer.createBot({
   auth: 'microsoft'              // only set if you need microsoft auth, then set this to 'microsoft'
 })
 
+bot.once('spawn', () => {
+  bot.chat("If you're seeing this, something is really good for me!")
+})
+
 bot.on('chat', (username, message) => {
   if (username === bot.username) return
   bot.chat(message)
